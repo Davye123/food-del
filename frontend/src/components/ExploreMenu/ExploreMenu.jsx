@@ -1,7 +1,6 @@
-
-
 import './ExploreMenu.css'
 import { menu_list } from '../../assets/assets'
+import PropTypes from 'prop-types';
 
 const ExploreMenu = ({category,setCategory}) => {
   return (
@@ -22,6 +21,11 @@ const ExploreMenu = ({category,setCategory}) => {
     </div>
   )
 }
+
+ExploreMenu.propTypes = {
+  category: PropTypes.string.isRequired,
+  setCategory: PropTypes.func.isRequired,
+};
 
 export default ExploreMenu
 
