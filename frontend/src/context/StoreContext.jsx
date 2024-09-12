@@ -1,10 +1,10 @@
 import { createContext,useState ,useEffect} from "react";
-import PropTypes from 'prop-types';
+
 import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext(null)
 
-const StoreContextProvider = ({ children }) => {
+export const StoreContextProvider = (props) => {
 
     const [cartItems,setCartItems] = useState({});
 
@@ -39,13 +39,11 @@ const StoreContextProvider = ({ children }) => {
     }
     return(
         <StoreContext.Provider value={contextValue}>
-            {children}
+            {props.children}
         </StoreContext.Provider>
     )
 }
 
-StoreContextProvider.propTypes = {
-    children: PropTypes.node.isRequired,
-};
+
 
 export default StoreContextProvider;
