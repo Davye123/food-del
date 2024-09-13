@@ -18,5 +18,12 @@
 }
 .app-download-platforms img{
     width: max(15vw,100px);
+    max-width: 150px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
+.app-download-platforms img:hover{
+    transform: scale(1.1);
+}
+
 
