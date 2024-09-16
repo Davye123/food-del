@@ -13,7 +13,7 @@ const FoodDisplay = ({category}) => {
         <div className='food-display-list'>
             {food_list.map((item,index)=>{
               if(category==="All" || item.category===category){
-                return<FoodItem key={index} id={item.id} name={item.name} price={item.price} image={item.image} description={item.description}/>
+                return<FoodItem key={index} id={item._id} name={item.name} price={item.price} image={item.image} description={item.description}/>
               }
                
                 
