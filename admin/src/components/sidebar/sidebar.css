@@ -27,22 +27,9 @@
 
 @media screen and (max-width: 768px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: flex-start;
+        width: 60px;
     }
-    .sidebar .sidebar-options {
-        width: auto;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        padding-right: 10px;
-    }
-    .sidebar span{
+    .sidebar span {
         display: none;
-    }
-    .sidebar .sidebar-options .sidebar-option.active {
-        background-color: #f0f0f0;
-        border-left: none;
-        border-bottom: 3px solid tomato;
     }
 }
