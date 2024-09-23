@@ -22,7 +22,7 @@ const LoginPopup = ({setShowLogin}) => {
         setData(data=>({...data,[name]:value}))
     }
 
-    const onLogin=async()=>{
+    const onLogin=async(event)=>{
 
         event.preventDefault()
         let newUrl = url

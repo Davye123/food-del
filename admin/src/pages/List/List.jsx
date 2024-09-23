@@ -31,7 +31,8 @@ const List = ({url}) => {
 
   useEffect(() => {
     fetchList();
-  }, []);
+  }, [url]);
+
 
 
   return (
@@ -51,7 +52,7 @@ const List = ({url}) => {
           list.map((item,index) => {
             return(
               <div key={index} className='list-table-format'>
-                <img src={`${url}/images/`+item.image} alt=""/>
+                <img src={`${url}/images/$item.image`} alt={item.image}/>
                 <p>{item.name}</p>
                 <p>{item.description}</p>
                 <p>{item.category}</p>
@@ -64,7 +65,7 @@ const List = ({url}) => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default List
